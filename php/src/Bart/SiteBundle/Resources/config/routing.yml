@@ -1,0 +1,11 @@
+bart_site_homepage:
+    pattern:  /
+    defaults: { _controller: BartSiteBundle:Default:index }
+
+setStaticValue:
+    pattern:  /welcome/setvalue
+    defaults: { _controller: BartSiteBundle:Default:setStaticValue }
+
+add_movie:
+    pattern:  /welcome/addmovie
+    defaults: { _controller: BartSiteBundle:Default:addMovie }

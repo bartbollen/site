@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Bart\SiteBundle\Entity\Movies" table="movies">
+    <id name="id" type="integer" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="text" column="name" nullable="false"/>
+    <field name="genreid" type="integer" column="genreID" nullable="false"/>
+    <field name="trailer" type="text" column="trailer" nullable="false"/>
+    <field name="dateadded" type="date" column="dateAdded" nullable="false"/>
+    <field name="publicationyear" type="integer" column="publicationYear" nullable="false"/>
+  </entity>
+</doctrine-mapping>

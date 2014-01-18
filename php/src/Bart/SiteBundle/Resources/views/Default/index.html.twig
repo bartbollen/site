@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<!-- Designed by Bart Bollen -->
+		
+		<meta charset="utf-8" />
+
+		<meta name="viewport" content="width=device-width" />
+
+                {% block headTitle %}
+                {% endblock %}
+                
+                {% block stylesheets%}
+                    <link rel="stylesheet" href="{{ asset('bundles/BartSite/css/foundation.css') }}" />
+                    <link rel="stylesheet" href="{{ asset('bundles/BartSite/css/foundation.min.css') }}" />
+                    <link rel="stylesheet" href="{{ asset('bundles/BartSite/css/normalize.css') }}" />
+                {% endblock %}
+
+                {% block javascripts %}
+                    <script src="{{ asset('bundles/BartSite/js/jquery.js')}}" type="text/javascript"></script>
+                    <script src="{{ asset('bundles/BartSite/js/modernizr.js')}}" type="text/javascript"></script>
+                {% endblock %}
+		
+	</head>
+        <body>
+            {{topbar|raw}}             
+            <br>
+            <div class="row">
+                <div class="large-12 columns">
+                    {{content|raw}}
+                </div>
+            </div>
+            <script src="{{ asset('bundles/BartSite/js/foundation.min.js')}}" type="text/javascript"></script>
+            <script>
+            $(document).foundation();
+            </script>
+
+        </body>
+</html>

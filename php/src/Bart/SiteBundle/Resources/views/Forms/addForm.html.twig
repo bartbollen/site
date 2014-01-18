@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="large-6 columns">
+        {{alert|raw}}
+    </div>
+</div>
+
+{{ form_start(form) }}
+<div class="row">
+    <div class="large-6 columns">
+        <fieldset>
+        <legend>New Movie</legend>
+        <br>
+        <div class="row">
+            <div class="large-8 columns">
+                {{ form_label(form.name)}}
+                {{ form_widget(form.name)}}    
+            </div>
+            <div class="large-4 columns">
+                {{ form_label(form.publicationyear)}}
+                {{ form_widget(form.publicationyear)}}    
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-6 columns">
+                {{ form_label(form.genreid)}}
+                {{ form_widget(form.genreid)}}    
+            </div>
+            <div class="large-6 columns">
+                {{ form_label(form.dateadded)}}
+                {{ form_widget(form.dateadded)}}    
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                {{ form_label(form.trailer)}}
+                {{ form_widget(form.trailer)}}    
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                {{ form_label(form.save)}}
+                {{ form_widget(form.save)}}    
+            </div>
+        </div>
+        </fieldset>
+    </div>
+</div>
+{{ form_end(form) }}
+

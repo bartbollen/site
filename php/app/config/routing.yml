@@ -1,0 +1,4 @@
+bart_site:
+    resource: "@BartSiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
